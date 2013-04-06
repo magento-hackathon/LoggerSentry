@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Hackathon_LoggerSentry>
+            <version>1.0.0</version>
+        </Hackathon_LoggerSentry>
+    </modules>
+    <global>
+        <models>
+            <hackathon_loggersentry>
+                <class>Hackathon_LoggerSentry_Model</class>
+            </hackathon_loggersentry>
+        </models>
+        <helpers>
+            <hackathon_loggersentry>
+                <class>Hackathon_LoggerSentry_Helper</class>
+            </hackathon_loggersentry>
+        </helpers>
+        <log>
+            <core>
+                <writer_models>
+                    <sentry>
+                        <label>Sentry</label>
+                        <class>Hackathon_LoggerSentry_Model_Sentry</class>
+                    </sentry>
+                </writer_models>
+            </core>
+        </log>
+    </global>
+    <default>
+        <logger>
+            <sentry>
+                <apikey>https://XXXXXXXXXXXXXXX:XXXXXXXXXXXXX@app.getsentry.com/7202</apikey>
+                <logger_name>Magento Sentry Logger</logger_name>
+            </sentry>
+        </logger>
+    </default>
+</config>

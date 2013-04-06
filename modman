@@ -1,0 +1,3 @@
+app/code/community/Hackathon/LoggerSentry               app/code/community/Hackathon/LoggerSentry
+app/etc/modules/Hackathon_LoggerSentry.xml              app/etc/modules/Hackathon_LoggerSentry.xml
+lib/raven-php                                           lib/raven-php
