@@ -1,6 +1,6 @@
 <?php
 
-set_include_path(get_include_path() . PATH_SEPARATOR . 'lib' . DS . 'raven-php' . DS . 'lib' . DS);
+set_include_path(get_include_path() . PATH_SEPARATOR . realpath(Mage::getBaseDir() . '/../vendor/raven/raven/lib'));
 
 class Hackathon_LoggerSentry_Model_Sentry extends Zend_Log_Writer_Abstract
 {
@@ -41,7 +41,7 @@ class Hackathon_LoggerSentry_Model_Sentry extends Zend_Log_Writer_Abstract
     public function __construct($filename)
     {
         /* @var $helper Hackathon_Logger_Helper_Data */
-        $helper = Mage::helper('hackathon_logger');
+        $helper = Mage::helper('firegento_logger');
         $options = array(
             'logger' => $helper->getLoggerConfig('sentry/logger_name')
         );
@@ -60,7 +60,7 @@ class Hackathon_LoggerSentry_Model_Sentry extends Zend_Log_Writer_Abstract
     {
         try {
             /* @var $helper Hackathon_Logger_Helper_Data */
-            $helper = Mage::helper('hackathon_logger');
+            $helper = Mage::helper('firegento_logger');
             $helper->addEventMetadata($event);
 
             $additional = array(

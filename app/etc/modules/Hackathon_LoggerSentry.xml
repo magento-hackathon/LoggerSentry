@@ -5,7 +5,7 @@
             <active>true</active>
             <codePool>community</codePool>
             <depends>
-                <Hackathon_Logger />
+                <FireGento_Logger />
             </depends>
         </Hackathon_LoggerSentry>
     </modules>
