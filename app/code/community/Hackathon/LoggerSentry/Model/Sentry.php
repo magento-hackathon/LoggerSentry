@@ -1,6 +1,6 @@
 <?php
 
-set_include_path(get_include_path() . PATH_SEPARATOR . 'lib' . DS . 'raven-php' . DS . 'lib' . DS);
+set_include_path(get_include_path() . PATH_SEPARATOR . realpath(Mage::getBaseDir() . '/../vendor/raven/raven/lib'));
 
 class Hackathon_LoggerSentry_Model_Sentry extends Zend_Log_Writer_Abstract
 {
