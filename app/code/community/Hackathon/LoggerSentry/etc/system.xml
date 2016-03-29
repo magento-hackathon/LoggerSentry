@@ -9,19 +9,27 @@
                     <sort_order>90</sort_order>
                     <show_in_default>1</show_in_default>
                     <fields>
-                        <apikey translate="label">
+                        <apikey translate="label comment">
                             <label>API key</label>
                             <frontend_type>textarea</frontend_type>
                             <sort_order>0</sort_order>
                             <show_in_default>1</show_in_default>
                             <comment>Add here your API key</comment>
                         </apikey>
-                        <logger_name>
+                        <logger_name translate="label">
                             <label>Logger name</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
                         </logger_name>
+                        <priority translate="label comment">
+                            <label>Priority Level Filter</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>firegento_logger/system_config_source_prioritydefault</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <comment>Choose the lowest priority level to be sent to Sentry. If a log level is lower priority than this then it will not be sent to Sentry.</comment>
+                        </priority>
                     </fields>
                 </sentry>
             </groups>
