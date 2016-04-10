@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Hackathon_LoggerSentry>
-            <version>1.0.0</version>
+            <version>1.1.0</version>
         </Hackathon_LoggerSentry>
     </modules>
     <global>
@@ -32,6 +32,7 @@
             <sentry>
                 <apikey>https://XXXXXXXXXXXXXXX:XXXXXXXXXXXXX@app.getsentry.com/7202</apikey>
                 <logger_name>Magento Sentry Logger</logger_name>
+                <priority>4</priority>
             </sentry>
         </logger>
     </default>
