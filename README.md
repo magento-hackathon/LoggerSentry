@@ -10,13 +10,24 @@ If you're not using composer to manage non-magento 3rd party packages, then you 
 3. Configure the module (see below).
 
 ## Installtion With Composer
-For those of you that want to keep 3rd party packages out of your repo, here are your instructions:
-1. Add `"sentry/sentry": "^1.6.0"` to your `composer.json` in the `require` section.
-2. Run `composer update` to update libraries.
-3. Pull down the code somewhere (`git clone git@github.com:magento-hackathon/LoggerSentry.git`)
-4. Copy over all files associatively.
-5. Delete `lib/` from the LoggerSentry folder (or wherever you just pulled down the code)
-6. Configure the module (see below).
+Add to your repositories:
+
+```
+"repositories": [
+	    {
+            "type": "composer",
+            "url": "http://packages.firegento.com"
+        }
+    ],
+```
+
+Install with composer:
+
+`composer require magento-hackathon/loggersentry`
+
+Additional requirements:
+
+[firegento/logger](https://github.com/firegento/firegento-logger)
 
 ## Configuration
 
