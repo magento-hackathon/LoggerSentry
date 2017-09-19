@@ -29,7 +29,7 @@
       ],
       [
         "./lib/sentry",
-        "./lib/sentry",
+        "./lib/sentry"
       ],
       [
         "./app/etc/modules/Hackathon_LoggerSentry.xml",
