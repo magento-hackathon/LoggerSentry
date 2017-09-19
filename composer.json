@@ -1,0 +1,62 @@
+{
+  "name": "magento-hackathon/LoggerSentry",
+  "license": [
+    "GPL-3.0"
+  ],
+  "type": "magento-module",
+  "description": "Extension for Firegento Logger module to log to Sentry Service, too.",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/magento-hackathon/magento-composer-installer"
+    }
+  ],
+  "require": {
+    "magento-hackathon/magento-composer-installer": "*",
+    "firegento/firegento-logger": "*"
+  },
+  "extra": {
+    "magento-root-dir": "./",
+    "magento-deploystrategy": "link",
+    "map": [
+      [
+        "./app/code/community/Hackathon/LoggerSentry",
+        "./app/code/community/Hackathon/LoggerSentry"
+      ],
+      [
+        "./app/lib/sentry",
+        "./app/lib/sentry"
+      ],
+      [
+        "./app/etc/modules/Hackathon_LoggerSentry.xml",
+        "./app/etc/modules/Hackathon_LoggerSentry.xml"
+      ]
+    ]
+  },
+  "authors": [
+    {
+      "name": "Schrank",
+      "email": "",
+      "homepage": "https://github.com/Schrank",
+      "role": "Developer"
+    },
+    {
+      "name": "Jay El-Kaake",
+      "email": "",
+      "homepage": "https://github.com/jayelkaake",
+      "role": "Developer"
+    },
+    {
+      "name": "Sylvain Rayé",
+      "email": "",
+      "homepage": "https://github.com/diglin",
+      "role": "Developer"
+    },
+    {
+      "name": "Kevin Krieger",
+      "email": "kk@kkrieger.de",
+      "homepage": "https://kkrieger.de",
+      "role": "Developer"
+    }
+  ]
+}
