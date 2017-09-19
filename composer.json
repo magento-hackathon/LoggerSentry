@@ -9,11 +9,15 @@
     {
       "type": "vcs",
       "url": "https://github.com/magento-hackathon/magento-composer-installer"
+    },
+    {
+      "type": "composer",
+      "url": "https://packages.firegento.com"
     }
   ],
   "require": {
     "magento-hackathon/magento-composer-installer": "*",
-    "firegento/firegento-logger": "*"
+    "firegento/firegento-logger": "^1.6.0"
   },
   "extra": {
     "magento-root-dir": "./",
