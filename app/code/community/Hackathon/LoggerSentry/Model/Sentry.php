@@ -1,7 +1,5 @@
 <?php
 
-set_include_path(get_include_path() . PATH_SEPARATOR . realpath(Mage::getBaseDir() .DS.'lib'.DS.'sentry'.DS.'raven'.DS.'lib'));
-
 class Hackathon_LoggerSentry_Model_Sentry extends Zend_Log_Writer_Abstract
 {
     /**
