@@ -29,10 +29,6 @@
         "./app/code/community/Hackathon/LoggerSentry"
       ],
       [
-        "./lib/sentry",
-        "./lib/sentry"
-      ],
-      [
         "./app/etc/modules/Hackathon_LoggerSentry.xml",
         "./app/etc/modules/Hackathon_LoggerSentry.xml"
       ]
