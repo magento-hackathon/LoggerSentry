@@ -17,7 +17,7 @@
   ],
   "require": {
     "magento-hackathon/magento-composer-installer": "*",
-    "firegento/firegento-logger": "^1.6.0"
+    "firegento/logger": "^1.6"
   },
   "extra": {
     "magento-root-dir": "./",
