@@ -17,8 +17,7 @@
   ],
   "require": {
     "magento-hackathon/magento-composer-installer": "*",
-    "firegento/logger": "1.*",
-    "sentry/sentry": "*"
+    "firegento/logger": "1.*"
   },
   "extra": {
     "magento-root-dir": "./",
@@ -27,6 +26,10 @@
       [
         "./app/code/community/Hackathon/LoggerSentry",
         "./app/code/community/Hackathon/LoggerSentry"
+      ],
+      [
+        "./lib/sentry",
+        "./lib/sentry"
       ],
       [
         "./app/etc/modules/Hackathon_LoggerSentry.xml",
